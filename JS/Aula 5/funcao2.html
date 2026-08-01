@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funcao 2</title>
+  </head>
+  <body>
+    <script>
+      // Funções
+      // Parametros
+      function saudacao(nome, isAdmin = false) {
+        console.log(`Olá ${nome}, seja bem vindo!`);
+        if (isAdmin) console.log("Admin do Sistema.");
+      }
+
+      // Somente o parametro obrigatório (nome)
+      const nome = prompt("Digite seu nome: ");
+      saudacao(nome);
+
+      // Passando os parametros opcionais tambẽm (isAdmin)
+      saudacao('Fernanda', true);
+    </script>
+  </body>
+</html>

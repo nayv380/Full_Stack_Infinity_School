@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex03</title>
+  </head>
+  <body>
+    <script>
+      let quantidadeNegativos = 0;
+
+      for (let i = 0; i < 4; i++) {
+        const numero = Number(prompt("Digite um numero"));
+        if (numero < 0) quantidadeNegativos++;
+      }
+
+      alert(`Foram inseridos ${quantidadeNegativos} numeros negativos`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex03.</title>
+  </head>
+  <body>
+    <script>
+      function calcularMedia(n1, n2, n3) {
+        return (n1 + n2 + n3) / 3;
+      }
+
+      const nota1 = Number(prompt("Digite a 1º nota: "));
+      const nota2 = Number(prompt("Digite a 2º nota: "));
+      const nota3 = Number(prompt("Digite a 3º nota: "));
+
+      const media = calcularMedia(nota1, nota2, nota3);
+
+      alert(`A média entre as notas é ${media.toFixed(2)}`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+- O que é um algoritmo?
+
+"Uma sequencia de passos que visa atingir um objetivo bem definido"
+
+1. PEGAR ..
+2. FAZER ..
+3. IR at
+
+---------------------------------
+Ex01. Escrevam um algoritmo no bloco de notas, para fazer um café com um coador.
+
+1. IR até a cozinha
+2. PEGAR o café
+3. PEGAR o coador
+4. PEGAR uma panela
+5. ENCHER a panela com agua
+6. LIGAR uma boca do fogão
+7. COLOCAR a panela no fogão
+8. AGUARDAR a agua ferver
+7. COLOCAR o pó de café no coador
+8. POSICIONAR o coador acima da garrafa termíca
+9. PEGAR a penela com a agua
+10. PASSAR o café

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <h1>Calculadora</h1>
+
+    <label for="numero1"> Numero 1: </label>
+    <input type="text" id="numero1" />
+    <br />
+
+    <label for="numero2"> Numero 2: </label>
+    <input type="text" id="numero2" />
+
+    <br />
+
+    <button onclick="handleSomar()">Somar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+      /**
+       * Essa função recebe dois numeros e retorna a soma entre eles.
+       *
+       * @param {number} n1 - Primeiro numero da soma
+       * @param {number} n2 - Segundo numero da soma
+       *
+       * @returns {number} - A soma dos dois numeros
+       */
+      function somar(n1, n2) {
+        return n1 + n2;
+      }
+
+      function handleSomar() {
+        // Entrada
+        const num1 = Number(document.getElementById("numero1").value);
+        const num2 = Number(document.getElementById("numero2").value);
+
+        // Processamento
+        const resultado = somar(num1, num2);
+
+        // Saída
+        const paragrafoResultado = document.getElementById("resultado");
+        paragrafoResultado.innerText = `${num1} + ${num2} = ${resultado}`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funções não nomeadas</title>
+  </head>
+  <body>
+    <button id="button-anonima">Clique-me (Função Anonima)</button>
+    <button id="button-arrow">Clique-me (Arrow Function)</button>
+
+    <script>
+      // Definindo a função anonima e já atribuindo ao onclick.
+      const buttonAnonima = document.getElementById("button-anonima");
+
+      buttonAnonima.onclick = function () {
+        console.log("Fui Clicado");
+      };
+
+      // Definindo a arrow function e já atribuindo ao onclick.
+      const buttonArrow = document.getElementById("button-arrow");
+      buttonArrow.onclick = () => console.log("Fui Clicado");
+    </script>
+  </body>
+</html>

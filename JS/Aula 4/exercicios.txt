@@ -1,0 +1,9 @@
+Ex01. Faça um programa que realize uma contagem 1 a 10
+
+Ex02. Faça um programa que realize uma contagem de 10 até 1
+
+Ex03. Faça um programa que peça 4 numeros com o for, e conte a quantidade de numeros negativos.
+Dica: Utilize o "if" dentro do for.
+
+Ex04. Faça um programa que peça um texto para o usuário, e mostre a quantidade de vogais.
+Dica: utilize o "for of"

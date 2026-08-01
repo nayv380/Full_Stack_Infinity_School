@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callbacks</title>
+  </head>
+  <body>
+    <script>
+      function processar(texto, preProcessamento = undefined) {
+        if (preProcessamento) {
+          const textoPreProssado = preProcessamento(texto);
+          return textoPreProssado.toLowerCase();
+        }
+
+        return texto.toLowerCase();
+      }
+
+      // 1. Sem Callback
+      const chamada1 = processar("TEXTO"); // 'texto'
+
+      // 2. Com Callback (Com Função Definida)
+      function adicionarPrefixo(texto) {
+        return "PREFIX: " + texto;
+      }
+
+      const chamada2 = processar("TEXTO", adicionarPrefixo); // 'prefix: texto'
+
+      // 2. Com Callback (Com Função Não Definida)
+      const chamada3 = processar("TEXTO", (texto) => texto + ": SUFIXO"); // 'texto: sufixo'
+    </script>
+  </body>
+</html>

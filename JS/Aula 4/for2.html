@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For 2</title>
+  </head>
+  <body>
+    <script>
+      let palavra = "cachorro";
+
+      // For Of - Iterar os Valores
+
+      document.writeln("<h3> For Of </h3>");
+      for (let letra of palavra) {
+        document.writeln(letra);
+      }
+
+      document.writeln("<br>");
+
+      // For In - Iterar os Indices
+      document.writeln("<h3> For In </h3>");
+
+      for (let i in palavra) {
+        document.writeln(`[${i}] - ${palavra[i]}`);
+        document.writeln("<br>");
+      }
+
+      document.writeln("<h3> For Normal </h3>");
+
+      for (let i = 0; i < palavra.length; i++) {
+        document.writeln(`[${i}] - ${palavra[i]}`);
+        document.writeln("<br>");
+      }
+    </script>
+  </body>
+</html>

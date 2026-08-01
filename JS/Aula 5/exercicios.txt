@@ -1,0 +1,19 @@
+Ex01. Faça uma função que receba 2 parametros
+
+- nome (obrigatório)
+- sobrenome (opcional, e se não for informado considere uma string vazia (''))
+
+Você deve mostrar uma mensagem "Olá <nome> <sobrenome>" em um alert.
+
+---------------------------------------------------
+
+Ex02. Faça uma função "multiplicar" que receba 2 numeros e retorne o produto entre eles.
+
+Ex03. Faça uma função "calcularMedia" que receba 3 notas e retorne a média entre as notas.
+
+---------------------------------------------------
+Ex04. Faça um programa, para calcular a soma de 2 numeros.
+
+- Os valores devem ser digitados em um input do HTML.
+- A soma só irá ocorrer após o usuário clicar em um botão "Somar".
+- O resultado deve ser mostrado m um paragrafo.
