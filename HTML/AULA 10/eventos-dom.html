@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos DOM</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Eventos</h1>
+
+    <button>Clique</button>
+
+    <hr />
+
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+
+    <script>
+      // Eventos DOM
+      // Os eventos dom são eventos que ocorrem durante a utilização do Site e/ou interação com o HTML
+
+      // Clique
+      const button = document.querySelector("button");
+      button.addEventListener("click", (event) => alert("Click!"));
+
+      // KeyDown
+      window.addEventListener("keydown", (event) => {
+        console.log(event);
+      });
+
+      // Mouse Enter
+      const divs = document.querySelectorAll("div");
+
+      divs.forEach((div) =>
+        div.addEventListener("mouseenter", (event) => {
+          const element = event.target;
+          console.log(element.innerText);
+        }),
+      );
+    </script>
+  </body>
+</html>

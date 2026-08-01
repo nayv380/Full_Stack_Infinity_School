@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model - DOM</title>
+  </head>
+  <body>
+    <h1>Titulo</h1>
+    <button id="btn">Clique aqui</button>
+
+    <div class="box red"></div>
+    <div class="box blue"></div>
+    <div class="box green"></div>
+
+    <script>
+      // Document Object Model - DOM
+      // Get Element By ID
+      const button = document.getElementById("btn");
+      console.log(button);
+
+      // Query Selector
+      const titulo = document.querySelector("h1");
+      console.log(titulo);
+
+      const boxes = document.querySelectorAll(".box");
+      console.log(boxes);
+
+      // Outras formas...
+      // console.log(document.getElementsByClassName('box'))
+    </script>
+  </body>
+</html>

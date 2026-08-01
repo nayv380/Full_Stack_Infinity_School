@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objetos Javascript</title>
+  </head>
+  <body>
+    <script>
+      // Objeto Javascript
+      // É uma estrutura dados que pode
+      // armazenar multiplos valores através de chaves
+
+      const meuObj = {
+        // chave: valor
+        nome: "Objeto", // item
+        tamanho: 3,
+        propriedade: true,
+
+        // Uma propriedade do objeto também pode ser uma função.
+        dobrar: function (valor) {
+          return valor * 2;
+        },
+      };
+
+      // Acessar
+      console.log(meuObj.nome);
+
+      // Chamar a Função do Objeto
+      const resultado = meuObj.dobrar(2);
+      
+      console.log(resultado);
+    </script>
+  </body>
+</html>
